@@ -1,0 +1,299 @@
+/*  
+Theme Name: Telephone Pole
+Theme URI: http://mumford-photo.com/
+Description: A plain text, typewriter-font theme with black text on white and red links.
+Version: 1.0.1
+Tags: light, two-columns, right-sidebar, fixed-width, 
+Author: Peter Mumford
+Author URI: http://mumford-photo.com/
+*/
+
+@font-face {
+    font-family: 'courier_primeregular';
+    src: url('fonts/courier_prime-webfont.eot');
+    src: url('fonts/courier_prime-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/courier_prime-webfont.woff') format('woff'),
+         url('fonts/courier_prime-webfont.ttf') format('truetype'),
+         url('fonts/courier_prime-webfont.svg#courier_primeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+html{font-family:monospace;}
+body{margin:0}
+a{background:transparent}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+
+
+/*  Typeography, colors & alignment */
+body {
+	font-size: 110%;
+	line-height: 1.4;
+	font-family: 'courier_primeregular', Courier, monospace;
+	color: #333;
+	}
+a {
+	border:none;
+	outline:0;
+	color:#c00;
+	text-decoration:none;
+}
+a:hover, a:focus {
+	text-decoration:underline;
+	}
+	
+h2, h3, h4, h5, h6 {
+	font-size: 120%;
+	font-family: "Franklin", sans-serif;
+	text-transform:uppercase;
+ }
+.widget-title {margin: 12px 0;}
+h2.listhead {
+	margin-bottom:30px;
+	}
+
+strong, b, em, i {
+	text-decoration:underline
+	}
+p em, p b, p strong {
+	font-style:normal;
+	}
+.vcard {
+	text-align:right;
+	margin:10px 17px 20px 0;
+	}
+.address p {
+	line-height:1.2em;
+	}
+.hentry {
+	border-top:1px dashed black;
+	padding-bottom:0;
+	}
+.alignleft {
+	float:left;
+	}
+.alignright {
+	float:right;
+	}
+.clear {
+	clear:left;
+	}
+.clearentry {
+	clear:left;
+	color:#fff;
+	}
+.site-title {
+	display: inline;
+	font-family: "Franklin", sans-serif;
+	padding: 0;
+	margin:0;
+	background-color:#fff;
+	line-height:90%;
+	}
+h1 a {
+	color:#d00;
+	 }
+h1.site-title {font-size: 200%;}
+h2.site-title {
+	text-transform:lowercase;
+	font-size: 190%;
+	}
+	
+ul#sidebar {
+	list-style:none;
+	}	
+ul#sidebar ul {
+	padding-left:15px;
+	}
+ul li {
+	line-height:1.3em;
+	}
+#footercopy {
+	padding-top:25px;
+	clear:left;
+	}
+hr {
+	height:0.3em;
+	margin:1em 0 3em 0;
+	border:0;
+	border-top:1px dashed black;
+	border-bottom:1px dashed black;
+	}	
+img {  
+	border-style: none;
+	}
+.date {clear:both;}
+/*	Gallery */
+
+.gallery-item {
+	float:left;
+	margin:0 10px 10px 0;
+	width:258px;
+	height:258px;
+	}
+dt {
+	line-height:0;
+	}	
+dd {
+	display: none;
+	}
+.gallery-item a {
+	border-bottom:none;
+	}	
+.attachment img, .entry p img, .gallery-item img {
+	border:1px solid black;
+	padding:3px;
+	}
+.attachment img, .entry p img {
+	margin:0 6px 6px 0;	
+	}
+.thumbnail {
+	margin:0 10px 10px 0;
+	border:1px solid black;
+	padding:3px;
+	}
+
+/*	Structure */
+
+html, body {
+	height:100%;
+	margin:0;
+	padding:0;
+	}
+
+.postmeta {
+	}
+.brick {
+	width:260px;
+	margin:0 16px 8px 0;
+	}
+#sidebar {
+	width:226px;
+	display:block;
+	margin:0 16px 40px 0;
+	float:right;
+	border:1px solid black;
+	padding: 0 16px 16px 16px;
+	}
+#page {
+	position: relative;
+	top:0px;
+	margin:0;
+    min-height: 100%;
+	background:#fff;
+	background-image: url(/wordpress/wp-content/themes/telephone_pole/images/telephone_pole_middle.png);
+	background-repeat: repeat-y;
+	background-position: 0px 542px;	
+	}	
+#postsbox, .navigation {
+	border-bottom: 1px dashed black;
+}
+.navigation {
+	padding: 5px 0;
+}
+.post {
+	float:right;
+	background-color:white;
+	}
+#posts_wide {
+	}
+#content {
+	padding: 30px 0 10px 215px;
+	max-width:828px;
+	position:relative;
+	z-index:2;
+	}
+#header {
+	position:absolute;
+	top:0;
+	width:550px;
+	height:201px;
+	}
+#header_img {
+	position:absolute;
+	background-image: url(/wordpress/wp-content/themes/telephone_pole/images/telephone_pole_top.png); 
+	background-repeat: no-repeat;
+	top:0;
+	width:550px;
+	z-index:1;
+	height:542px;
+	}	
+#footer_img {
+	position:absolute;
+	background-image: url(/wordpress/wp-content/themes/telephone_pole/images/telephone_pole_bottom.png); 
+	background-repeat: no-repeat;
+	bottom:0;
+	z-index:1;
+	width:100%;
+	height:239px;
+	}	
+form#searchform {
+	padding-right: 20px;
+	}
+input[type=search] {
+	border-radius: 0; 
+	width: 99%;
+	}	
+/* Clearfix */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (max-device-width: 1067px) {
+	#header_img,#page,#footer_img { background-position: -50px 0; }
+	#content { max-width: auto; padding: 20px 0 10px 150px; }
+    .site-title {float: right; display: inline-block; margin: 0 20px 20px auto; clear: both;}
+}
+
+@media only screen and (max-device-width: 480px) {
+	body {font-size: 200%;}
+	h1.site-title {font-size: 220%;text-align: right;}
+	h2.site-title {font-size: 200%;text-align: right;}
+	#sidebar {display: none;}
+	.brick { width:100%; float:none; margin-right: 0;}
+	.vcard { margin:0 17px 30px 0; line-height:1.1em; font-size:inherit; position:relative; }
+/*	h1 { margin: 0;	position:relative; top:200px;}	
+*/	#header_img,#page,#footer_img { background-position: -100px 0; }
+	#content { padding:10px 0 0 100px; width:100%; }
+	img.mobile-thumbnail { width:99%;height:auto; }
+	#s,#searchsubmit { -webkit-transform: scale(2); position:relative; }
+	#s { left:50px; }
+	#searchsubmit {left:150px; }
+	p.footercopy { text-align:right;}
+}

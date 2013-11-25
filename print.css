@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+/*  Typeography, colors & alignment */
+
+body {
+	font-family: Courier, monospace;
+	font-size: 90%;
+	color:#333;
+	}
+
+p {
+	line-height:1.4em;
+	}
+a {
+	border:none;
+	outline:0;
+	color:#c00;
+	text-decoration:none;
+	}
+h2, h3, h4, h5, h6 { 	
+	border-bottom:1px dashed black;
+	font-family: "Franklin", sans-serif;
+	padding-bottom:3px;
+ }
+h2.listhead {
+	margin-bottom:30px;
+	}
+small, h3, h4, h5, h6 {
+	font-size:100%;
+	}
+h2 {
+	font-size:115%;
+	}
+h2, h3, h4, h5, h6 {
+	text-transform:uppercase;
+	letter-spacing:0.08em;
+	}
+strong, b, em, i {
+	text-decoration:underline
+	}
+p em, p b, p strong {
+	font-style:normal;
+	}
+.vcard {
+	text-align:right;
+	margin:30px 0 10px 0;
+	}
+.address p {
+	line-height:1.2em;
+	}
+.hentry {
+	border-bottom:1px dashed black;
+	margin:0 0 40px 0;
+	padding-bottom:0;
+	}
+.alignleft {
+	float:left;
+	}
+.alignright {
+	float:right;
+	}
+.clear {
+	clear:left;
+	}
+.clearentry {
+	clear:left;
+	color:#fff;
+	}
+h1 {
+	font-family: "Franklin", sans-serif;
+	padding: 0 0 5px 0;
+	margin:30px 0 5px 0;
+	background-color:#fff;
+	}
+h1 a {
+	color:#d00;
+	 }
+h1 span {
+	text-transform:lowercase;
+	padding-left:10px;
+	font-size:70%;
+	padding-left:20px;
+	}
+h2 span {
+	text-transform:none;
+	}
+ul#sidebar {
+	list-style:none;
+	}	
+ul li {
+	line-height:1.3em;
+	}
+.footercopy {
+	padding-top:25px;
+	clear:left;
+	}
+hr {
+	height:0.3em;
+	margin:1em 0 3em 0;
+	border:0;
+	border-top:1px dashed black;
+	border-bottom:1px dashed black;
+	}	
+img {  
+	border-style: none;
+	}
+		
+/*	Gallery */
+
+.gallery-item {
+	float:left;
+	margin:0 10px 10px 0;
+	}
+dt {
+	border:1px solid black;
+	line-height:0;
+	padding:3px;
+	}	
+dd {
+	display: none;
+	}
+.gallery-item a {
+	border-bottom:none;
+	}	
+.attachment img, .entry p img {
+	border:1px solid black;
+	padding:3px;
+	margin-right:6px;
+	}
+.thumbnail {
+	margin:0 10px 10px 0;
+	border:1px solid black;
+	padding:3px;
+	}
+
+/*	Structure */
+
+html, body {
+	height:100%;
+	margin:0;
+	padding:0;
+	}
+
+.postmeta {
+	}
+
+#sidebar {
+	display:none;
+	}
+#page {
+	position: relative;
+	top:0px;
+	margin:0;
+    min-height: 100%;
+	background:#fff;
+	background-image: url(/wordpress/wp-content/themes/telephone_pole/images/telephone_pole_middle.png);
+	background-repeat: repeat-y;
+	background-position: 0px 542px;	
+	}	
+#posts {
+	width:520px;
+	}
+#posts_wide {
+	}
+#content {
+	padding: 10px 0 10px 20px;
+	width:70%;
+	position:relative;
+	z-index:2;
+	}
+#header {
+	position:absolute;
+	top:0;
+	width:550px;
+	height:201px;
+	}
+#header_img {
+	position:absolute;
+	background-image: url(/wordpress/wp-content/themes/telephone_pole/images/telephone_pole_top.png); 
+	background-repeat: no-repeat;
+	top:0;
+	width:550px;
+	z-index:1;
+	height:542px;
+	}	
+#footer_img {
+	position:absolute;
+	background-image: url(/wordpress/wp-content/themes/telephone_pole/images/telephone_pole_bottom.png); 
+	background-repeat: no-repeat;
+	bottom:0;
+	z-index:1;
+	width:100%;
+	height:239px;
+	}	
